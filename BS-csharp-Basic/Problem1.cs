@@ -71,7 +71,7 @@ namespace BS_csharp_Basic
             int x1 = 4, y1 = 8;
             Console.WriteLine($"{x1 * y1} {x1 / y1} {x1%y1} {x1|y1} {x1^y1} {x1&y1}");
 
-            //Problem1-6
+            //Problem-6
             int year = 2022;
             if (year % 400 == 0)
             {
@@ -84,6 +84,16 @@ namespace BS_csharp_Basic
             else
             {
                 Console.WriteLine($"{year} is not a leap year");
+            }
+
+            //Problem-7
+            if(5<6 || 10 < 5)
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("False");
             }
             Console.ReadKey();
         }
