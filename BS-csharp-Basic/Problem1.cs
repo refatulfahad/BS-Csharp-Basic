@@ -97,11 +97,50 @@ namespace BS_csharp_Basic
             }
 
             //problem-8
+            year = 2004;
             string leap = (year % 400) == 0 ? "leap year" : (year % 4 == 0 && year % 100 != 0) ? "leap year" : "not leap year";
             Console.WriteLine(leap);
 
             //problem-9
+            //This is Single comment
+            /*This is Multiline comment*/
 
+            //problem-10
+            int[]ar=new int[100];
+            for(int i = 1; i <= 100; i++)
+            {
+                ar[i-1]=i;
+                if (i == 95) continue;
+                Console.Write(i + " ");
+                if (i == 99) break;
+            }
+            Console.WriteLine();
+
+            int cnt = 0;
+            while (cnt <= 100)
+            {
+                ++cnt;
+                if (cnt == 95) continue;
+                Console.Write(cnt + " ");
+                if (cnt == 99) break;   
+            }
+            Console.WriteLine();
+
+            cnt = 0;
+            do
+            {
+                ++cnt;
+                if (cnt == 95) continue;
+                Console.Write(cnt + " ");
+                if (cnt == 99) break;
+            } while (cnt <= 100);
+
+            foreach (int i in ar)
+            {
+                if (i == 95) continue;
+                Console.Write(i+" ");
+                if (i == 99) break;
+            }
             Console.ReadKey();
         }
     }
