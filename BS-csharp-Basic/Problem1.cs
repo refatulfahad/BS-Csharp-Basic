@@ -65,6 +65,10 @@ namespace BS_csharp_Basic
             Console.WriteLine($"string to int {num1}\nstring to long {num2}\nstring to double {num3}\n" +
                 $"int to string {str4}\nstring to bool {flag}\nchar to ASCII {num7}\n"+
                 $"ASCII to char {ch2}");
+
+            //problem-5
+            int x1 = 4, y1 = 8;
+            Console.WriteLine($"{x1 * y1} {x1 / y1} {x1%y1} {x1|y1} {x1^y1} {x1&y1}");
             Console.ReadKey();
         }
     }
