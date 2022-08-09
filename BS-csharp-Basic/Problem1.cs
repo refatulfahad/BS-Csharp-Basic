@@ -134,12 +134,29 @@ namespace BS_csharp_Basic
                 Console.Write(cnt + " ");
                 if (cnt == 99) break;
             } while (cnt <= 100);
+            Console.WriteLine();
 
             foreach (int i in ar)
             {
                 if (i == 95) continue;
                 Console.Write(i+" ");
                 if (i == 99) break;
+            }
+            Console.WriteLine();
+
+            //problem-11
+            ch='+';
+            switch (ch)
+            {
+                case '+':
+                    Console.WriteLine(5+7);
+                    break;
+                case '-':
+                    Console.WriteLine(5-7);
+                    break ;
+                case '*':
+                    Console.WriteLine(5*7);
+                    break;
             }
             Console.ReadKey();
         }
