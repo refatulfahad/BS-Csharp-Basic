@@ -95,6 +95,13 @@ namespace BS_csharp_Basic
             {
                 Console.WriteLine("False");
             }
+
+            //problem-8
+            string leap = (year % 400) == 0 ? "leap year" : (year % 4 == 0 && year % 100 != 0) ? "leap year" : "not leap year";
+            Console.WriteLine(leap);
+
+            //problem-9
+
             Console.ReadKey();
         }
     }
