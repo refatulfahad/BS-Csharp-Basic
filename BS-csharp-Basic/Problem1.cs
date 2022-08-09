@@ -10,6 +10,8 @@ namespace BS_csharp_Basic
     {
         static void Main(string[] args)
         {
+            //problem-1
+            Console.WriteLine("Hello World");
             Console.ReadKey();
         }
     }
