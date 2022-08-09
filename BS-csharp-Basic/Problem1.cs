@@ -66,9 +66,25 @@ namespace BS_csharp_Basic
                 $"int to string {str4}\nstring to bool {flag}\nchar to ASCII {num7}\n"+
                 $"ASCII to char {ch2}");
 
+
             //problem-5
             int x1 = 4, y1 = 8;
             Console.WriteLine($"{x1 * y1} {x1 / y1} {x1%y1} {x1|y1} {x1^y1} {x1&y1}");
+
+            //Problem1-6
+            int year = 2022;
+            if (year % 400 == 0)
+            {
+                Console.WriteLine($"{year} is leap year");
+            }
+            else if (year % 4 == 0 && year % 100 != 0)
+            {
+                Console.WriteLine($"{year} is leap year");
+            }
+            else
+            {
+                Console.WriteLine($"{year} is not a leap year");
+            }
             Console.ReadKey();
         }
     }
