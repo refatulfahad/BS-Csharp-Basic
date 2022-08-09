@@ -21,6 +21,17 @@ namespace BS_csharp_Basic
             char ch = 'B';
             string st = "brainstation-23";
             Console.WriteLine($"{val} {mx} {dval} {ch} {st}");
+
+            //Problem1-3
+            int x = 2147483647;
+            try
+            {
+                int y = checked(x+1);
+            }
+            catch (OverflowException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }           
             Console.ReadKey();
         }
     }
